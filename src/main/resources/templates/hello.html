@@ -1,31 +1,71 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>멋쟁이사자처럼::아기사자 이은정</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        @font-face {
-            font-family: '양진체';
-            src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            color: #f2f2f2;
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the side navigation */
+        .sidenav {
+          height: 100%;
+          width: 200px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+        }
+
+
+        /* Side navigation links */
+        .sidenav a {
+          color: white;
+          padding: 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        /* Change color on hover */
+        .sidenav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        /* Style the content */
+        .content {
+          margin-left: 200px;
+          padding-left: 20px;
         }
     </style>
 </head>
-<body style="background-color: #33ccff; font-family: '양진체';">
-<h1>Hello, 사자!</h1>
-<table>
-    <tr>
-        <td>생성일</td>
-        <td>25.6.25</td>
-    </tr>
-    <tr>
-        <td colspan="2">두둥~~~파트2 : 달려~~</td>
-    </tr>
-</table>
-    <script>
-        alert("안녕~");
-    </script>
+<body>
+
+<div class="sidenav">
+    <a href="/">Home</a>
+    <a href="javascript:alert('준비중입니다');">Resume</a>
+    <a href="#">Link</a>
+</div>
+
+<div class="content">
+    <h2>멋쟁이사자처럼</h2>
+    <h2>백엔드 부트캠프 17기: Java</h2>
+    <p>25.05.2 ~ 25.11.27</p>
+    <p>훈련생 이은정</p>
+</div>
+<div class="content">
+    <h2>작업중 : OCR </h2>
+    <p>기간 : ~ 25.11.27 (틈틈이)</p>
+    <p>기획 : <a href="https://velog.io/@ieum_81712/OCR">벨로그</a></p>
+</div>
 </body>
 </html>
